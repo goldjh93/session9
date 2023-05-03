@@ -1,0 +1,10 @@
+<h1>Signup 페이지</h1>
+
+
+<form method="POST" action="{% url 'users:signup' %}"> #app name 지정 users
+    {% csrf_token %}
+    {{ form}}
+    <input type="submit" value="회원가입하기"/>
+</form>"
+
+<a href="{% url 'home' %}">홈</a>
